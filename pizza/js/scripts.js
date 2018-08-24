@@ -4,7 +4,7 @@ function Pizza(name, topping, cost) {
   this.cost = cost;
 }
 
-var newPizza = 0
+var newPizza = 10
 
 
 
@@ -60,12 +60,12 @@ var newPizza = 0
             newPizza++;
           });
 
-          if (newPizza === 0) {
-            alert("You are not stressed");
-          } else if (newPizza > 0 && newPizza <= 5 ) {
-            alert("You're not that stressed, quit bitching");
-          } else if (newPizza > 5 && newPizza<= 9) {
-            alert("You're kinda stressed. Keep doing those coping methods");
+          if (newPizza === 10) {
+            alert("Please check toppings!");
+          } else if (newPizza > 10 && newPizza <= 15 ) {
+            alert("You ordered DeluxePizza!");
+          } else if (newPizza > 15 && newPizza<= 19) {
+            alert("You ordered Supreme!");
           }
 
         });
