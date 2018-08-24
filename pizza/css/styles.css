@@ -1,4 +1,4 @@
-#hide-address,  #infos, #nextpage{
+#hide-address,  #infos, #nextpage, #price{
   display: none;
 }
 #refresh {
@@ -7,6 +7,11 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: auto;
+  min-height: 800px;
 }
 
 .topnav {
@@ -40,4 +45,9 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+#image2, #image1, #image3 {
+  width: 300px;
+  height: 200px;
+
 }

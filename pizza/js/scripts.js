@@ -1,27 +1,18 @@
-function Pizza(name, topping, cost) {
+//back end
+
+
+function Pizza(name, cost) {
   this.name = name;
-  this.toppings = toppings;
   this.cost = cost;
 }
 
-var newPizza = 10
+Pizza.prototype.pizzaOrder = function() {
+  return this.cost;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// user interface
+// front end
 
   $(document).ready(function() {
       $("#carry").click(function(){
@@ -52,14 +43,14 @@ var newPizza = 10
 
       $("form#pizza-toppings").submit(function(event){
           event.preventDefault();
-          $("input:checkbox[name=toppings]:checked").each(function(){
+        var newPizza = 10
+        var toppingPrize = $("input:checkbox[name=toppings]:checked").each(function(){
             newPizza++;
           });
 
-          $("input:checkbox[name=add-ons]:checked").each(function(){
+        var addOns =  $("input:checkbox[name=add-ons]:checked").each(function(){
             newPizza++;
           });
-
           if (newPizza === 10) {
             alert("Please check toppings!");
           } else if (newPizza > 10 && newPizza <= 15 ) {
