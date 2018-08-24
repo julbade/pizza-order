@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Order</title>
+  </head>
+  <body>
+    <div class="container">
+     <div id="frontpage">
+      <div class="jumbotron">
+       <h2>Julius Caesar's Pizza</h2>
+       <p>Order Now!<p>
+      <button type="button" class="btn btn-success" id="carry">Carry Out</button>
+      <button type="button" class="btn btn-danger" id="delivery">Delivery</button>
+          </div>
+      <div id="infos">
+        <h4>Please fill out the form:</h4>
+        <form>
+          <div class="pizza-order">
+          <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input id="firstname" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" class="form-control" type="text">
+          </div>
+          <div class="form-group" id="hide-address">
+            <label for="address">Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          </div>
+
+           <button type="submit" id="btn">Submit</button>
+        </form>
+        <h2 id="text2"> <i>Welcome!<span class="firstname"></span> <span class="lastname"></span>
+
+      </div>
+    </div>
+    <button type="button" class="btn btn-info" id="refresh">Restart</button>
+
+    <div id="nextpage">
+
+  </body>
+ </html>

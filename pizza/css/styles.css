@@ -1,0 +1,6 @@
+#hide-address, #text2, #infos{
+  display: none;
+}
+#refresh {
+  float: right; 
+}
