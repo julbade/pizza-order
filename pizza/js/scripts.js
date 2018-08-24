@@ -43,22 +43,25 @@ Pizza.prototype.pizzaOrder = function() {
 
       $("form#pizza-toppings").submit(function(event){
           event.preventDefault();
-        var newPizza = 10
-        var toppingPrize = $("input:checkbox[name=toppings]:checked").each(function(){
+        var newPizza = 1
+        var toppingPrize = 1
+        var addOns =  2
+        $("input:checkbox[name=toppings]:checked").each(function(){
             newPizza++;
           });
+        $("input:checkbox[name=add-ons]:checked").each(function(){
+            newPizza++;
+          });
+        var pizzaPrice = new Pizza(toppingPrize + addOns);
 
-        var addOns =  $("input:checkbox[name=add-ons]:checked").each(function(){
-            newPizza++;
-          });
-          if (newPizza === 10) {
+          if (newPizza === 0) {
             alert("Please check toppings!");
-          } else if (newPizza > 10 && newPizza <= 15 ) {
-            alert("You ordered DeluxePizza!");
-          } else if (newPizza > 15 && newPizza<= 19) {
-            alert("You ordered Supreme!");
+          } else if (newPizza > 0 && newPizza <= 5 ) {
+            $("ul#price").append("<li><span class='orderPrice'>" + pizzaPrice.pizzaOrder() + "</span>");
+            $("#price").show();
+          } else if (newPizza > 5 && newPizza<= 9) {
+            $("ul#price").append("<li><span class='orderPrice'>" + pizzaPrice.pizzaOrder() + "</span>");
           }
-
         });
 
 
