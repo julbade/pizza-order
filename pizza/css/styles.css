@@ -1,89 +1,54 @@
-#hide-address,  #infos, #nextpage, #price{
-  display: none;
+#infos {
+float: left;
+padding-left: 50px
+}
+#order {
+  margin-left: 150px;
 }
 #welcome {
   text-align: center;
   font-family: 'Autour One';font-size: 50px;
   text-shadow: 1px 1px black;
-  padding: 60px;
+  padding: 200px;
   text-align: center;
   background: #66a3ff;
   color: white;
   padding-bottom: 70px;
-  margin-top: 70px;
+  margin-top: 20px;
   margin-bottom: 50px;
+  background-image: url(../img/pizza4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 #pizzaads {
   width: 100%;
 }
-.topnav {
-  overflow: hidden;
-  background-color: skyblue;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.dropdown {
-    float: left;
+.navbar {
     overflow: hidden;
+    background-color: skyblue;
+    font-family: 'Autour One';
+    font-size: 20px
 }
 
-.dropdown .dropbtn {
+.navbar a {
+    float: left;
     font-size: 16px;
-    border: none;
-    outline: none;
     color: white;
+    text-align: center;
     padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
-    text-align:left;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
+.navbar a:hover {
+    background-color: red;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-p {
-  font-family: 'Bungee Outline'; font-size: 250px;
+p, h1 {
+  font-family: 'Sofia'; font-size: 250px;
   font-style: italic;
-  color: orange;
+  color: red;
+  text-shadow: 1px 1px red;
 
 
 }
@@ -92,9 +57,21 @@ p {
 
 }
 @keyframes blinkingText{
-    0%{     color: yellow;    }
+    0%{     color: #ffff80;    }
     49%{    color: transparent; }
     50%{    color: transparent; }
     99%{    color:transparent;  }
-    100%{   color: red;    }
+    100%{   color: white;    }
+}
+.mySlides {
+  height: 300px;
+  width: 500px;
+  float: right;
+  clear: right;
+  padding-top: 20px;
+  margin-right: 100px;
+  display: block;
+}
+body {
+  background-color: #ffcccc;
 }

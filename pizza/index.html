@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -12,28 +12,45 @@
     <title>Pizza Order</title>
   </head>
   <body>
-      <div class="topnav">
+      <div class="navbar">
         <a class="active" href="#home">Home</a>
-          <div class="dropdown">
-          <button class="dropbtn">Menu
-            <i class="fa fa-caret-down"></i>
-          </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-        <a href="#contact">Contact</a>
         <a href="#about">About</a>
+        <a href="#menu" id="menu">Menu</a>
+
       </div>
       <div class="container">
+        <div id="frontpage">
         <h2 id="welcome">Welcome to Julius Ceasar's Pizza!</h2>
         <div class="jumbotron">
+          <h1>Know our pizza!</h1>
           <p>Our 12-inch special-recipe pizza, featuring our traditional crispy crust, is topped with a blend of mozzarella, cheddar, provolone and aged Parmesan cheeses and a rich tomato sauce. No artificial flavors. Made with 100% real cheese!</p>
-          <div>
+        </div>
 
         <img src="img/pizzaads.jpeg" id="pizzaads">
+        <br>
+        <section>
+          <img class="mySlides" src="img/pizza1.jpeg">
+          <img class="mySlides" src="img/pizza2.jpg">
+          <img class="mySlides" src="img/pizza3.jpeg">
+        </section>
+        <h2 id="order">Order Now!</h2>
+
+        <form id="infos">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="firstname" name="name">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname" name="lastname">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Address</label>
+            <input type="text" class="form-control" id="address" name="lastname">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
 
 

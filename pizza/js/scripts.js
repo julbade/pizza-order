@@ -15,18 +15,7 @@ Pizza.prototype.pizzaOrder = function() {
 // front end
 
   $(document).ready(function() {
-      $("#carry").click(function(){
-      $("#infos").show();
-
-  });
-
-      $("#delivery").click(function(){
-      $("#infos").show();
-      $("#hide-address").show();
-
-  });
-
-      $("#infos").submit(function(event)  {
+      $("form#infos").submit(function(event)  {
       event.preventDefault()
       var firstnameInput = $("input#firstname").val();
       var lastnameInput = $("input#lastname").val();
@@ -35,8 +24,6 @@ Pizza.prototype.pizzaOrder = function() {
       $(".firstname").text(firstnameInput);
       $(".lastname").text(lastnameInput);
       $(".address").text(addressInput);
-      $("#frontpage").hide();
-      $("#nextpage").show();
     });
 
 
@@ -51,6 +38,22 @@ Pizza.prototype.pizzaOrder = function() {
             alert("Please Check Toppings!");
           }
         });
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+
+
 
 
   $(".active").click(function(event) {
