@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
@@ -8,87 +12,36 @@
     <title>Pizza Order</title>
   </head>
   <body>
-    <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-  <div class="content">
-    <div class="container">
-     <div id="frontpage">
-
-        <h2>Julius Caesar's Pizza</h2>
-        <h3>Order Now!</h3>
-          <button type="button" class="btn btn-success" id="carry">Carry Out</button>
-          <button type="button" class="btn btn-danger" id="delivery">Delivery</button>
-
-      <div id="infos">
-        <h4>Please fill out the form:</h4>
-        <form>
-          <div class="pizza-order">
-          <div class="form-group">
-            <label for="firstname">First Name:</label>
-            <input id="firstname" class="form-control" type="text">
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+          <div class="dropdown">
+          <button class="dropbtn">Menu
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="lastname">Last Name:</label>
-            <input id="lastname" class="form-control" type="text">
-          </div>
-          <div class="form-group" id="hide-address">
-            <label for="address">Address</label>
-            <input id="address" class="form-control" type="text">
-          </div>
-          </div>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="container">
+        <h2 id="welcome">Welcome to Julius Ceasar's Pizza!</h2>
+        <div class="jumbotron">
+          <p>Our 12-inch special-recipe pizza, featuring our traditional crispy crust, is topped with a blend of mozzarella, cheddar, provolone and aged Parmesan cheeses and a rich tomato sauce. No artificial flavors. Made with 100% real cheese!</p>
+          <div>
 
-           <button type="submit" id="btn">Submit</button>
-        </form>
-        </div>
-     </div>
-
-    <div id="nextpage">
-      <h2>Welcome <span class="firstname"></span><span class="lastname">!</span></h2>
-        <form id="pizza-toppings">
-          <div class="row">
-            <div class="form-group">
-              <div class="col-md-6">
-                <div class="jumbotron">
-                  <h3>Choose your toppings!</h3>
-                    <p>Check all the apply:</p>
-                    <input type="checkbox" name="toppings" value="1">Pepperoni<br>
-                    <input type="checkbox" name="toppings" value="1">Mushrooms<br>
-                    <input type="checkbox" name="toppings" value="1">Olives<br>
-                    <input type="checkbox" name="toppings" value="1">Bacon<br>
-                    <input type="checkbox" name="toppings" value="1">Red Pepper<br>
-                  </div>
-                </div>
-              </div>
-            <div class="form-group">
-              <div class="col-md-6">
-                <div class="jumbotron">
-                  <h3>Add Extra of this!</h3>
-                    <p>Check all the apply:</p>
-                    <input type="checkbox" name="add-ons" value="1">Cheese<br>
-                    <input type="checkbox" name="add-ons" value="1">Sauce<br>
-                    <input type="checkbox" name="add-ons" value="1">Meat<br>
-                    <input type="checkbox" name="add-ons" value="1">Onions<br>
-                  </div>
-                </div>
-              </div>
-           </div>
-        <img src="img/pizza1.jpeg" id="image1">
-        <img src="img/pizza2.jpg" id="image2">
-        <img src="img/pizza3.jpeg" id="image3">
-        <button type="submit" id="submit">Place your order</button>
-        </form>
-        <h2>Here are the Prices!</h2>
-        <ul id="price">
-        </ul>
+        <img src="img/pizzaads.jpeg" id="pizzaads">
 
 
 
-       </div>
-     </div>
+
+
+
+
     </div>
+
   </body>
  </html>

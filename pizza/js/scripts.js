@@ -44,12 +44,10 @@ Pizza.prototype.pizzaOrder = function() {
       $("form#pizza-toppings").submit(function(event){
           event.preventDefault();
       var newPizza = 0
-      var toppingPrize = $("input:checkbox[name=toppings]:checked").val();
-      var addOns =  $("input:checkbox[name=add-ons]:checked").val();
-      var pizzaPrice = new Pizza(toppingPrize + addOns);
 
 
-        if ( newPizza === 0) {
+
+        if  (newPizza === 0) {
             alert("Please Check Toppings!");
           }
         });
