@@ -1,12 +1,12 @@
-# Places You've Been: Constructor
+# Pizza Order
 
-#### Create a website where you can keep track of all the places you've been. August 20, 2018
+#### Create a website where you can order pizza for delivery or pick up. August 31, 2018
 
 #### By **Julius Bade**
 
 ## Description
 
-Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
+Create a website for a pizza company where a user can choose one or more individual toppings (cheese, sauce, meat,etc) and a size to order a pizza and see the final cost.
 
 
 ### Specs
@@ -14,7 +14,7 @@ Create a website for a pizza company where a user can choose one or more individ
 | :-------------     | :------------- | :------------- |
 | **Program Gathers User Input-Name** | User input: "Julius" | Output: "Julius" |
 | **Program Gathers User Input-Address and hides to be called upon later** | User input: "Seattle" | Output: Seattle|
-| **Program Gathers User Input-Toppings and Add ons** | User input: Click toppings | Output: Price |
+| **Program Gathers User Input-Toppings and Add ons** | User input: Click cheese | Output: Price |
 
 
 
