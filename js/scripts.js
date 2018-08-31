@@ -59,6 +59,7 @@ pizza.prototype.calculatePrice = function ()
   var pizzaMeat= $("#meat").val();
   var newPizza = new pizza(pizzaSize, pizzaCheese, pizzaSauce, pizzaMeat);
   $("#totalPrice").text(newPizza.calculatePrice() + "$");
+  
 
 });
     $("form#infos").submit(function(event)  {
