@@ -15,7 +15,10 @@ Create a website for a pizza company where a user can choose one or more individ
 | **Program Gathers User Input-Name** | User input: "Julius" | Output: "Julius" |
 | **Program Gathers User Input-Address and hides to be called upon later** | User input: "Seattle" | Output: Seattle|
 | **Program Gathers User Input-Toppings and Add ons** | User input: Click cheese | Output: Price |
-
+| **Program Gathers User Input-Toppings and Add ons** | User input: Click size | Output: Price |
+| **Program Gathers User Input-Toppings and Add ons** | User input: Click sauce | Output: Price |
+| **Program Gathers User Input-Toppings and Add ons** | User input: Click meat | Output: Price |
+| **Program Gathers User Input-Order now** | User input: Click Order | Output: Price & Delivery details |
 
 
 ## Setup/Installation Requirements

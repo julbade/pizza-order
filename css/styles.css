@@ -5,10 +5,10 @@
 }
 #welcome {
   text-align: center;
-  font-family: 'Autour One';font-size: 50px;
+  font-family: 'Autour One';font-size: 80px;
   text-shadow: 1px 1px black;
   padding: 200px;
-  text-align: center;
+  text-align:justify;
   background: #66a3ff;
   color: white;
   padding-bottom: 70px;
@@ -18,8 +18,10 @@
   background-size: cover;
 
 }
-#pizzaads {
+.slides {
+  height: 80%;
   width: 100%;
+
 }
 #nextpage, .menu, .details {
   display: none;
@@ -66,14 +68,14 @@ p, h1 {
 
 
 body {
-  background-color: white;
+  background-color: #e6e6e6;
 }
 .images {
   height: 200px;
   width: 300px;
 }
 .images:hover {
-  transform: scale3d(1.1);
+  transform: scale(1.1);
 }
 h2, .details {
   font-family: 'Autour One';
