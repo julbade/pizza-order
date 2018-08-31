@@ -16,49 +16,109 @@
         <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#menu" id="menu">Menu</a>
+        <a href="#delivery" id="delivery">Delivery</a>
 
       </div>
       <div class="container">
         <div id="frontpage">
-        <h2 id="welcome">Welcome to Julius Ceasar's Pizza!</h2>
-        <div class="jumbotron">
-          <h1>Know our pizza!</h1>
-          <p>Our 12-inch special-recipe pizza, featuring our traditional crispy crust, is topped with a blend of mozzarella, cheddar, provolone and aged Parmesan cheeses and a rich tomato sauce. No artificial flavors. Made with 100% real cheese!</p>
+          <h2 id="welcome">Welcome to Julius Ceasar's Pizza!</h2>
+            <img src="img/pizzaads.jpeg" id="pizzaads">
+            <br>
+            <br>
+      <div class="row">
+       <div class="col-md-4">
+         <div class="panel panel-info">
+           <h2 class="panel-heading">Small</h2>
+             <div class="panel-body">
+               <img src="img/pizza1.jpeg" class="images">
+               <p>Price: 10$</p>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="panel panel-info">
+             <h2 class="panel-heading">Medium</h2>
+               <div class="panel-body">
+                 <img src="img/pizza2.jpg" class="images">
+                 <p>Price: 12$</p>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-4">
+             <div class="panel panel-info">
+               <h2 class="panel-heading">Large</h2>
+                 <div class="panel-body">
+                   <img src="img/pizza3.jpeg" class="images">
+                   <p>Price: 15$</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+        <div id="nextpage">
+          <div class="row">
+            <form id="infos">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="firstname" name="name">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" name="lastname">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" name="address">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+          </div>
+        </div>
+          <div class="details">
+        <p>Your Details:</p>
+          <span class="firstname"></span>
+          <span class="lastname"></span>
+          <span class="address"></span>
         </div>
 
-        <img src="img/pizzaads.jpeg" id="pizzaads">
-        <br>
-        <section>
-          <img class="mySlides" src="img/pizza1.jpeg">
-          <img class="mySlides" src="img/pizza2.jpg">
-          <img class="mySlides" src="img/pizza3.jpeg">
-        </section>
-        <h2 id="order">Order Now!</h2>
+        <div class="menu">
+          <div class="row">
+           <div class="col-md-4">
+             <div class="panel panel-info">
+               <h2 class="panel-heading">Small</h2>
+                 <div class="panel-body">
+                   <img src="img/pizza1.jpeg" class="images">
+                   <p>Price: 10$</p>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="panel panel-info">
+                 <h2 class="panel-heading">Medium</h2>
+                   <div class="panel-body">
+                     <img src="img/pizza2.jpg" class="images">
+                     <p>Price: 12$</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-4">
+                 <div class="panel panel-info">
+                   <h2 class="panel-heading">Large</h2>
+                     <div class="panel-body">
+                       <img src="img/pizza3.jpeg" class="images">
+                       <p>Price: 15$</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
-        <form id="infos">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="firstname" name="name">
-          </div>
-          <div class="form-group">
-            <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname" name="lastname">
-          </div>
-          <div class="form-group">
-            <label for="lastname">Address</label>
-            <input type="text" class="form-control" id="address" name="lastname">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
 
 
 
-
-
-
-
-    </div>
+        </div>
 
   </body>
  </html>

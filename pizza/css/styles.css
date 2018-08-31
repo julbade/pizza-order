@@ -14,8 +14,7 @@ padding-left: 50px
   background: #66a3ff;
   color: white;
   padding-bottom: 70px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background-image: url(../img/pizza4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +22,9 @@ padding-left: 50px
 }
 #pizzaads {
   width: 100%;
+}
+#nextpage, .menu, .details {
+  display: none;
 }
 .navbar {
     overflow: hidden;
@@ -45,7 +47,7 @@ padding-left: 50px
 }
 
 p, h1 {
-  font-family: 'Sofia'; font-size: 250px;
+  font-family: 'Sofia'; font-size: 20px;
   font-style: italic;
   color: red;
   text-shadow: 1px 1px red;
@@ -57,21 +59,18 @@ p, h1 {
 
 }
 @keyframes blinkingText{
-    0%{     color: #ffff80;    }
+    0%{     color: white;    }
     49%{    color: transparent; }
     50%{    color: transparent; }
     99%{    color:transparent;  }
     100%{   color: white;    }
 }
-.mySlides {
-  height: 300px;
-  width: 500px;
-  float: right;
-  clear: right;
-  padding-top: 20px;
-  margin-right: 100px;
-  display: block;
-}
+
+
 body {
-  background-color: #ffcccc;
+  background-color: white;
+}
+.images {
+  height: 200px;
+  width: 300px;
 }

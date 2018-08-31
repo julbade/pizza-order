@@ -12,19 +12,36 @@ Pizza.prototype.pizzaOrder = function() {
 
 
 
+
 // front end
 
   $(document).ready(function() {
-      $("form#infos").submit(function(event)  {
+    $("#delivery").click(function(event){
       event.preventDefault()
-      var firstnameInput = $("input#firstname").val();
-      var lastnameInput = $("input#lastname").val();
-      var addressInput = $("input#address").val();
+      $("#frontpage").hide();
+      $("#nextpage").show();
+      $(".details").show();
+  });
+  $("#menu").click(function(event){
+    event.preventDefault()
+    $("#frontpage").hide();
+    $("#nextpage").hide();
+    $(".details").hide();
+    $(".menu").show();
+});
 
-      $(".firstname").text(firstnameInput);
-      $(".lastname").text(lastnameInput);
-      $(".address").text(addressInput);
-    });
+
+
+        $("form#infos").submit(function(event)  {
+        event.preventDefault()
+        var firstnameInput = $("input#firstname").val();
+        var lastnameInput = $("input#lastname").val();
+        var addressInput = $("input#address").val();
+
+        $(".firstname").text(firstnameInput);
+        $(".lastname").text(lastnameInput);
+        $(".address").text(addressInput);
+  });
 
 
 
@@ -38,20 +55,6 @@ Pizza.prototype.pizzaOrder = function() {
             alert("Please Check Toppings!");
           }
         });
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            x[myIndex-1].style.display = "block";
-            setTimeout(carousel, 3000);
-        }
 
 
 
