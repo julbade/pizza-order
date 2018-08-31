@@ -2,7 +2,7 @@
 var inputSize = {"small":10, "medium":12, "large":15};
 var inputCheese = {"less cheese":1, "normal cheese":4, "extra cheese":6};
 var inputSauce = {"bbq":2, "sauce":2, "alfredo":2};
-var inputMeat = {"chicken":3, "pepperoni":2, "sardines":4};
+var inputMeat = {"chicken":3, "pepperoni":2, "bacon":4};
 
 function pizza(size, cheese, sauce, meat) {
   this.size = size;
